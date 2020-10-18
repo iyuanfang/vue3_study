@@ -1,15 +1,22 @@
 {
-    "name": "vue3_study",
-    "version": "0.0.0",
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build"
-    },
-    "dependencies": {
-        "vue": "^3.0.1"
-    },
-    "devDependencies": {
-        "vite": "^1.0.0-rc.1",
-        "@vue/compiler-sfc": "^3.0.0-rc.1"
-    }
+  "name": "vue3_study",
+  "version": "0.0.0",
+  "scripts": {
+    "test": "jest",
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "ant-design-vue": "^2.0.0-beta.10",
+    "vue": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.0.0-rc.1",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^26.5.2",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^26.5.3",
+    "regenerator-runtime": "^0.13.7",
+    "vite": "^1.0.0-rc.1"
+  }
 }

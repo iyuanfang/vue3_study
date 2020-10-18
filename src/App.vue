@@ -10,11 +10,16 @@
 <ol>
     <TodoItem v-for="todo in todos" v-bind:msg="todo.text"></TodoItem>
 </ol>
+<div>
+    <a-button type="primary" @click="alertc">
+        Primary
+    </a-button>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
-import TodoItem from './components/TodoItem.vue';
+import HelloWorld from "./components/HelloWorld.vue";
+import TodoItem from "./components/TodoItem.vue";
 
 export default {
     data() {
@@ -22,25 +27,28 @@ export default {
             message: "test",
             seen: true,
             todos: [{
-                    text: 'Learn JavaScript'
+                    text: "Learn JavaScript",
                 },
                 {
-                    text: 'Learn Vue'
+                    text: "Learn Vue",
                 },
                 {
-                    text: 'Build something awesome'
-                }
-            ]
-        }
+                    text: "Build something awesome",
+                },
+            ],
+        };
     },
     components: {
         HelloWorld,
-        TodoItem
+        TodoItem,
     },
     methods: {
         changeSeen() {
             this.seen = !this.seen;
+        },
+        alertC() {
+            this.seen = !this.seen;
         }
-    }
-}
+    },
+};
 </script>
