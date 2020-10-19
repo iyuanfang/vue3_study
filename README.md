@@ -4,6 +4,8 @@ https://www.yuque.com/docs/share/60b7c197-f014-47b7-811a-b7a0bdf3bd3f?# 《vue3_
 
 运行：
 ```
+npm i //初始化node_modules,然后
+
 npm run dev 
 ```
 启动vite，默认端口为3000
